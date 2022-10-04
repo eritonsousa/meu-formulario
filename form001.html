@@ -8,16 +8,20 @@
 </head>
 <body>
     <h1>PREENCHA AS INFORMAÇÕES:</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required></p>
-        <p><label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome" required size="30"> </p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="inome">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required autocomplete="username" maxlength="10"></p>
+
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="Senha" id="isenha" required>
+            <input type="password" name="Senha" id="isenha" required autocomplete="new-password" maxlength="8">
+        </p>
+        <p>
+            <label for="icpf">CPF:</label>
+            <input type="text" name="cpf" id="icpf" required autocomplete="off" maxlength="11" size="11">
         </p>
         <p><input type="submit" value="ENVIAR"></p>
+
     </form>
 </body>
 </html>
