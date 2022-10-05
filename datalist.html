@@ -7,6 +7,36 @@
     <title>DateList</title>
 </head>
 <body>
-    
+
+
+    <!--
+        DATALIST
+    OBS: O Label valor só serve para o SELECT.
+
+    O datalist seguido do ID, serve para as opções(option) aparecer somente quando clicar na caixa de texto (INPUT:TEXT)
+
+    *Pode colocar um valor (value) dentro das opções(option), como por exemplo a silga:
+    <option value="Dev"> Desenvolvedor </option>
+    NÃO É OBRIGATÓRIO!
+    -->
+
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iprofissao">Profissão:</label>
+            <input type="text" name="profissao" id="iprofissao" list="listaprof">
+
+                <datalist id="listaprof">
+                    <option>Administrador</option>
+                    <option>Contador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Professor</option>
+                </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="PRONTO">
+        </p>
+    </form>    
 </body>
 </html>
